@@ -2,7 +2,7 @@ import axios, { AxiosRequestConfig } from "axios";
 
 export interface FetchResponse<T> {
   count: number;
-  next: string | null; // cause error in useGenres and usePlatforms (RC hasn't found)
+  next: string | null; // Add new field will cause error in initial data
   results: T[];
 }
 

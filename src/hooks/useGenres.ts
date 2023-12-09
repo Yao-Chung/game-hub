@@ -16,7 +16,7 @@ const useGenres = () =>
     queryKey: ["genres"],
     queryFn: apiClient.getAll,
     staleTime: 24 * 60 * 60 * 1000, // 24 hours
-    initialData: { count: genres.length, results: genres }, // this json object should match with the one in get method
+    initialData: genres, // this json object should match with the one in get method
   });
 
 export default useGenres;
