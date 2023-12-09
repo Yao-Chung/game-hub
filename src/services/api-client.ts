@@ -2,7 +2,7 @@ import axios, { AxiosRequestConfig } from "axios";
 
 export interface FetchResponse<T> {
   count: number;
-  next: string | null;
+  next: string | null; // cause error in useGenres and usePlatforms (RC hasn't found)
   results: T[];
 }
 
