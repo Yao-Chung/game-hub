@@ -15,7 +15,7 @@ const usePlatforms = () =>
     queryKey: ["platforms"],
     queryFn: apiClient.getAll,
     staleTime: 24 * 60 * 60 * 1000, // 24 hours
-    initialData: { count: platforms.length, results: platforms }, // this json object should match with the one in get method
+    initialData: { count: platforms.length, results: platforms, next: null }, // this json object should match with the one in get method
   });
 
 export default usePlatforms;
